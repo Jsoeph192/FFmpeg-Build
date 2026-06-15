@@ -7,17 +7,6 @@ The minimum supported version is Windows 10 22H2, no guarantees on anything olde
 
 Linux builds are targetting RHEL/CentOS 8 (glibc-2.28 + linux-4.18) and anything more recent.
 
-## Auto-Builds
-
-Builds run daily at 12:00 UTC (or GitHubs idea of that time) and are automatically released on success.
-
-**Auto-Builds run ONLY for win(arm)64 and linux(arm)64. There are no win32/x86 auto-builds, though you can produce win32 builds yourself following the instructions below.**
-
-### Release Retention Policy
-
-- The last build of each month is kept for two years.
-- The last 14 daily builds are kept.
-- The special "latest" build floats and provides consistent URLs always pointing to the latest build.
 
 ## Package List
 
@@ -66,3 +55,5 @@ All of those can be optionally combined with any combination of addins:
 * `4.4`/`5.0`/`5.1`/`6.0`/`6.1`/`7.0`/`7.1` to build from the respective release branch instead of master.
 * `debug` to not strip debug symbols from the binaries. This increases the output size by about 250MB.
 * `lto` build all dependencies and ffmpeg with -flto=auto (HIGHLY EXPERIMENTAL, broken for Windows, sometimes works for Linux)
+
+This is from [here](https://github.com/BtbN/FFmpeg-Builds)
